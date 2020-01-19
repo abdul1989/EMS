@@ -55,5 +55,11 @@ namespace EMS
         {
             MessageBox.Show("new btn");
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            CoreApp.clsConnection_DAL clsConnection_DAL = new CoreApp.clsConnection_DAL();
+
+        }
     }
 }
