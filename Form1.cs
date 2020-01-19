@@ -20,33 +20,15 @@ namespace EMS
         int inc = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtAge.Text.Trim().Length == 0)
+            int age = Convert.ToInt32(txtAge.Text);
+            if (age>=18)
             {
-                MessageBox.Show("Please enter age.");
-            }
-            else if (Convert.ToInt32(txtAge.Text)>18)
-            {
-                MessageBox.Show("valid age.");
-            }
-            else if (Convert.ToInt32(txtAge.Text) ==18)
-            {
-                MessageBox.Show("valid age.");
+                MessageBox.Show("Valid age");
             }
             else
             {
-                inc++;
-                if (inc>=3)
-                {
-                    Application.Exit();
-                }
-                else
-                {
-                    MessageBox.Show("Invalid Age");
-                }
-               
+                MessageBox.Show("Invalid age");
             }
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
