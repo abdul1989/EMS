@@ -24,7 +24,11 @@ namespace EMS
             {
                 MessageBox.Show("Please enter age.");
             }
-           else if (Convert.ToInt32(txtAge.Text)>18)
+            else if (Convert.ToInt32(txtAge.Text)>18)
+            {
+                MessageBox.Show("valid age.");
+            }
+            else if (Convert.ToInt32(txtAge.Text) ==18)
             {
                 MessageBox.Show("valid age.");
             }
