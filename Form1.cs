@@ -52,6 +52,9 @@ namespace EMS
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Hi");
+
+            MyMathLibrary.Class1 obj = new MyMathLibrary.Class1();
+            obj.Add();
         }
     }
 }
