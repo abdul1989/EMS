@@ -79,7 +79,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MyMathLibrary_2">
+    <PackageReference Include="MyAdditionLib_01">
       <Version>1.0.0</Version>
     </PackageReference>
   </ItemGroup>
