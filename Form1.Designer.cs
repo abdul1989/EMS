@@ -36,11 +36,11 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.lstItem = new System.Windows.Forms.ListBox();
             this.txtItem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,7 +105,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(285, 222);
+            this.button5.Location = new System.Drawing.Point(305, 204);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 6;
@@ -128,6 +128,15 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Item Details :";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(80, 243);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 12;
+            this.button7.Text = "Add";
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
@@ -165,15 +174,6 @@
             this.label2.Size = new System.Drawing.Size(118, 18);
             this.label2.TabIndex = 8;
             this.label2.Text = "Enter Item name :";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(80, 243);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 12;
-            this.button7.Text = "Add";
-            this.button7.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
