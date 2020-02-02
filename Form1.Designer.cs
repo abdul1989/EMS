@@ -36,10 +36,11 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.lstItem = new System.Windows.Forms.ListBox();
             this.txtItem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.lstItem = new System.Windows.Forms.ListBox();
-            this.button6 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,7 +105,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(285, 222);
+            this.button5.Location = new System.Drawing.Point(305, 204);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 6;
@@ -115,6 +116,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Silver;
+            this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.lstItem);
             this.groupBox1.Controls.Add(this.txtItem);
@@ -122,10 +124,38 @@
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(409, 24);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(248, 261);
+            this.groupBox1.Size = new System.Drawing.Size(248, 282);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Item Details :";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(80, 243);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 12;
+            this.button7.Text = "Add";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(138, 96);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 11;
+            this.button6.Text = "Add";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // lstItem
+            // 
+            this.lstItem.FormattingEnabled = true;
+            this.lstItem.ItemHeight = 18;
+            this.lstItem.Location = new System.Drawing.Point(16, 125);
+            this.lstItem.Name = "lstItem";
+            this.lstItem.Size = new System.Drawing.Size(197, 112);
+            this.lstItem.TabIndex = 10;
             // 
             // txtItem
             // 
@@ -144,25 +174,6 @@
             this.label2.Size = new System.Drawing.Size(118, 18);
             this.label2.TabIndex = 8;
             this.label2.Text = "Enter Item name :";
-            // 
-            // lstItem
-            // 
-            this.lstItem.FormattingEnabled = true;
-            this.lstItem.ItemHeight = 18;
-            this.lstItem.Location = new System.Drawing.Point(16, 125);
-            this.lstItem.Name = "lstItem";
-            this.lstItem.Size = new System.Drawing.Size(197, 112);
-            this.lstItem.TabIndex = 10;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(138, 96);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Add";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Form1
             // 
@@ -200,6 +211,7 @@
         private System.Windows.Forms.ListBox lstItem;
         private System.Windows.Forms.TextBox txtItem;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button7;
     }
 }
 
