@@ -21,17 +21,10 @@ namespace EMS
         int inc = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtAge.Text.Trim().Length == 0)
+            int age = Convert.ToInt32(txtAge.Text);
+            if (age>=18)
             {
-                MessageBox.Show("Please enter age.");
-            }
-            else if (Convert.ToInt32(txtAge.Text)>18)
-            {
-                MessageBox.Show("valid age.");
-            }
-            else if (Convert.ToInt32(txtAge.Text) ==18)
-            {
-                MessageBox.Show("valid age.");
+                MessageBox.Show("Valid age");
             }
             else
             {
@@ -45,6 +38,10 @@ namespace EMS
                     MessageBox.Show("Invalid Age");
                 }
                
+            }
+            for (int i = 0; i < 10; i++)
+            {
+
             }
 
 
@@ -63,6 +60,24 @@ namespace EMS
             MyAdditionLib myAdditionLib = new MyAdditionLib();
             int result=myAdditionLib.Add(12, 12);
             MessageBox.Show(result.ToString());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("new btn");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            CoreApp.clsConnection_DAL clsConnection_DAL = new CoreApp.clsConnection_DAL();
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("hi");
+            MessageBox.Show("Test");
+            MessageBox.Show("Test3");
         }
     }
 }
