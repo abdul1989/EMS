@@ -61,5 +61,10 @@ namespace EMS
             CoreApp.clsConnection_DAL clsConnection_DAL = new CoreApp.clsConnection_DAL();
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("hi);
+        }
     }
 }
