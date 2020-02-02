@@ -56,16 +56,10 @@ namespace EMS
 
         private void button3_Click(object sender, EventArgs e)
         {
-            // code for addition.
-            MyAdditionLib myAdditionLib = new MyAdditionLib();
-            int result=myAdditionLib.Add(12, 12);
-            MessageBox.Show(result.ToString());
+         
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("new btn");
-        }
+       
 
         private void button4_Click(object sender, EventArgs e)
         {
