@@ -68,5 +68,10 @@ namespace EMS
             MessageBox.Show("Test");
             MessageBox.Show("Test3");
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            lstItem.Items.Add(txtItem.Text);
+        }
     }
 }
